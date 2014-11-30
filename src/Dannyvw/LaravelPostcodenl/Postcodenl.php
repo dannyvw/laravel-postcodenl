@@ -28,7 +28,7 @@ class Postcodenl
     /**
      * @var string
      */
-    protected $apiUser;
+    protected $apiKey;
 
     /**
      * @var string
@@ -38,14 +38,14 @@ class Postcodenl
     /**
      * @param \Guzzle\Http\Client $client
      * @param string $baseUrl
-     * @param string $apiUser
+     * @param string $apiKey
      * @param string $apiSecret
      */
-    public function __construct(Client $client, $baseUrl, $apiUser, $apiSecret)
+    public function __construct(Client $client, $baseUrl, $apiKey, $apiSecret)
     {
         $this->client    = $client;
         $this->baseUrl   = $baseUrl;
-        $this->apiUser   = $apiUser;
+        $this->apiKey    = $apiKey;
         $this->apiSecret = $apiSecret;
     }
 
@@ -72,7 +72,7 @@ class Postcodenl
         );
 
         $request = $this->client->get($url)
-            ->setAuth($this->apiUser, $this->apiSecret);
+            ->setAuth($this->apiKey, $this->apiSecret);
 
         return $request->send()->json();
     }
