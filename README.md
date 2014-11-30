@@ -31,11 +31,11 @@ Add the facade to the aliases array in app/config/app.php
     'Postcodenl' => 'Dannyvw\Postcodenl\Facade\Postcodenl',
 
 Publish the configuration
-	
+
 	php artisan config:publish dannyvw/laravel-postcodenl
 
 Run composer update
-    
+
     composer update
 
 ## License
