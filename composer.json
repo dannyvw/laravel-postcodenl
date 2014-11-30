@@ -1,0 +1,23 @@
+{
+    "name": "dannyvw/laravel-postcodenl",
+    "description": "http://api.postcode.nl integration in Laravel",
+    "keywords": ["laravel", "postcode", "postalcode"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Danny van Wijk",
+            "email": "info@vwmedia.nl"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "4.2.*",
+        "guzzle/guzzle": "3.8.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "Dannyvw\\LaravelPostcodenl\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
