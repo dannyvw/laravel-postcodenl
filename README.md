@@ -18,17 +18,17 @@ or add the following to your composer.json file:
 
     {
         "require": {
-            "dannyvw/laravel-postcodenl": "0.*"
+            "dannyvw/laravel-postcodenl": "dev-master"
         }
     }
 
 Add the ServiceProvider to the providers array in app/config/app.php
 
-    'Dannyvw\Postcodenl\PostcodenlServiceProvider',
+    'Dannyvw\LaravelPostcodenl\LaravelPostcodenlServiceProvider',
 
 Add the facade to the aliases array in app/config/app.php
 
-    'Postcodenl' => 'Dannyvw\Postcodenl\Facade\Postcodenl',
+    'Postcodenl' => 'Dannyvw\LaravelPostcodenl\Facade\Postcodenl',
 
 Publish the configuration
 
@@ -40,6 +40,6 @@ Run composer update
 
 ## License
 
-Dannyvw\PostcodeNL is licensed under the [MIT License](http://opensource.org/licenses/MIT).
+Dannyvw\LaravelPostcodeNL is licensed under the [MIT License](http://opensource.org/licenses/MIT).
 
 Copyright 2014 Danny van Wijk
